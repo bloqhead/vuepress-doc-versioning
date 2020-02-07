@@ -97,3 +97,19 @@ configuration for our new release
 4. The new release version will be appended to a custom `releases.json` file that
 is used across the website for various things (like a version selector in the
 documentation pages sidebar, etc.)
+
+---
+
+#### Additional notes
+
+> Why can't you just use relative URLs in your doc pages and not have to worry about the version number?
+
+This would be nice and make life easier, but for SEO purposes, `/docs/0.3.2/` is
+better than `/0.3.2/docs/`.
+
+> What about replacing the version placeholder string in the browser?
+
+This would work on the surface, but the compiled content in the HTML itself
+would still reflect the `/semver/` URIs. We want to ensure that search engines
+don't index inaccurate content that has placeholders, vs proper documentation
+semver strings.
