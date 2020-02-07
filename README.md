@@ -43,8 +43,8 @@ value.
 ### Approach 2 - String replacement at the webpack processing level
 Via the [`string-replace-loader`](https://github.com/Va1/string-replace-loader) 
 module, we again look for our `semver` string so that we can dynamically replace
-it upon compiling with our actually version--based on the version of docs the
-user is editing.
+it upon compiling with our actual version number, which should be based on the 
+version of docs the user is editing.
 
 #### The problem
 This approach also works perfectly, except we face the same issue: how do we get
