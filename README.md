@@ -107,7 +107,7 @@ documentation pages sidebar, etc.)
 This would be nice and make life easier, but for SEO purposes, `/docs/0.3.2/` is
 better than `/0.3.2/docs/`.
 
-> What about replacing the version placeholder string in the browser?
+> What about replacing the version placeholder string in the browser via JavaScript?
 
 This would work on the surface, but the compiled content in the HTML itself
 would still reflect the `/semver/` URIs. We want to ensure that search engines
