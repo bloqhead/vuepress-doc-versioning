@@ -62,7 +62,7 @@ documentation version with ease.
 
 1. Create a new branch for your release
 2. Make all of your new edits in the "DRAFT" docs folder
-3. Once you are done, use the existing `kumacut` script (see below) to cut your
+3. Once you are done, use the existing `kumacut` script ([reference](https://github.com/kong/kuma-website#cutting-a-new-release)) to cut your
 new docs version
 4. Merge when done
 
