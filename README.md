@@ -36,9 +36,10 @@ in our VuePress [config.js](docs/.vuepress/config.js) file.
 *Read more about `extendMarkdown` in VuePress [here](https://vuepress.vuejs.org/config/#markdown-extendmarkdown)*
 
 #### The problem
-While this approach works perfectly, there is no way within `extendMarkdown` to
-get the version number dynamically from maybe the folder path, or a frontmatter
-value.
+While this approach works perfectly, there does not appear to be a way within 
+`extendMarkdown` to get the version number dynamically from something like the 
+folder path, a frontmatter value, or a config file that might be relative to
+the location of the processed markdown file.
 
 ### Approach 2 - String replacement at the webpack processing level
 Via the [`string-replace-loader`](https://github.com/Va1/string-replace-loader) 
