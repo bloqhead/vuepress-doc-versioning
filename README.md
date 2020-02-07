@@ -54,9 +54,9 @@ file within the directory, or try to find and parse a frontmatter string.
 
 ---
 
-## The current approach
+## The current approach - [read about it here](https://github.com/kong/kuma-website#cutting-a-new-release)
 I've written a Node script for VuePress that allows a user to "cut" a new
-documentation version with ease. These are the actions it carries out:
+documentation version with ease.
 
 **Prerequisites before running the existing script:**
 
