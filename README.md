@@ -1,5 +1,24 @@
 # VuePress Dynamic Version Experiment
 
+### Get started
+
+```
+yarn global add vuepress
+```
+
+```
+yarn docs:dev
+```
+
+- Go to [http://localhost:8080/0.3.2/](http://localhost:8080/0.3.2/)
+- Page edits are done in [docs/0.3.2/README.md](docs/0.3.2/README.md)
+- `semver` is the string that gets replaced
+  - The markdown replacement method is currently active but not the webpack approach
+  - See [docs/.vuepress/config.js](docs/.vuepress/config.js) for relevant
+    replace functions
+
+---
+
 ## The goal
 Say that we have a standard VuePress project and we want to have versioned
 documentation directories for pages. We don't want to have to hard-code the
