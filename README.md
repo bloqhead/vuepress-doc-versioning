@@ -36,7 +36,7 @@ in our VuePress [config.js](docs/.vuepress/config.js) file.
 *Read more about `extendMarkdown` in VuePress [here](https://vuepress.vuejs.org/config/#markdown-extendmarkdown)*
 
 #### The problem
-While this approach works perfectly, there does not appear to be a way within 
+While this approach gets the replacement step done, there does not appear to be a way within 
 `extendMarkdown` to get the version number dynamically from something like the 
 folder path, a frontmatter value, or a config file that might be relative to
 the location of the processed markdown file.
@@ -48,7 +48,7 @@ it upon compiling with our actual version number, which should be based on the
 version of docs the user is editing.
 
 #### The problem
-This approach also works perfectly, except we face the same issue: how do we get
+This approach also gets the first step done, except we face the same issue: how do we get
 the proper version string? If we could get the path of the markdown file being
 processed, we could reference that as a starting point to look for a `config.js`
 file within the directory, or try to find and parse a frontmatter string.
